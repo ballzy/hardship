@@ -15,7 +15,7 @@
   </h1>
 
   <fieldset class="inline form-group">
-    <legend class="form-label-bold add-padding" for="children">Are you or someone in your household pregnant?</legend>
+    <legend class="form-label-bold add-padding" for="children">Are you, your partner or someone in your care pregnant?</legend>
     <label class="block-label" data-target="hcp" for="children-1">
       <input id="children-1" type="radio" name="children" value="Yes">
       Yes
@@ -27,7 +27,16 @@
   </fieldset>
 
   <div class="js-hidden panel-indent" id="hcp">
-    <fieldset>   
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name-f1">What is their name?</label>
+      <input class="form-control" id="full-name-f1" type="text">
+    </div>
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name-f1">When is the baby due?</label>
+      <input class="form-control-1-4" id="full-name-f1" type="text">
+    </div>
+
+    <!--fieldset>   
 
       <legend class="form-label-bold add-padding">Provide details of a healthcare professional for the pregnant person</legend>
       
@@ -59,7 +68,7 @@
         <input type="text" class="form-control" id="healthcare-professional-phone">
       </div>
     
-    </fieldset>
+    </fieldset-->
   </div>
 
   
