@@ -1,0 +1,71 @@
+{{<layout}}
+
+{{$pageTitle}}Hardship Payment{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+  {{>includes/alpha-banner}}
+  
+  <form action="hardship" method="#" class="form">
+
+  <a href="seriously-ill" class="example-back-link">Back</a>
+
+  <h1 class="form-title heading-large">
+    Money and savings
+  </h1>
+
+  <fieldset class="inline form-group">
+    <legend class="form-label-bold add-padding" for="children">Do you have any savings?</legend>
+    <label class="block-label" data-target="hcp" for="children-1">
+      <input id="children-1" type="radio" name="children" value="Yes">
+      Yes
+    </label>
+    <label class="block-label" for="children-2">
+      <input id="children-2" type="radio" name="children" value="No">
+      No
+    </label>
+  </fieldset>
+
+  <div class="js-hidden panel-indent" id="hcp">
+    <fieldset>   
+      
+      <div class="form-group">
+        <label class="form-label" for="healthcare-professional-name">How much do you have saved?</label>
+        <input type="text" class="form-control-1-8" id="healthcare-professional-name">
+      </div>
+    
+    </fieldset>
+  </div>
+
+  <fieldset class="inline form-group">
+    <legend class="form-label-bold add-padding" for="childrenop">Do you have any money owed or coming to you in the near future?</legend>
+    <label class="block-label" data-target="money" for="children-3">
+      <input id="children-3" type="radio" name="childrenop" value="Yes">
+      Yes
+    </label>
+    <label class="block-label" for="children-4">
+      <input id="children-4" type="radio" name="childrenop" value="No">
+      No
+    </label>
+  </fieldset>
+
+  <div class="js-hidden panel-indent" id="money">
+    <fieldset>   
+      
+      <div class="form-group">
+        <label class="form-label" for="money">How much do you have owed or coming to you in the near future?</label>
+        <input type="text" class="form-control-1-8" id="money">
+      </div>
+    
+    </fieldset>
+  </div>
+
+  
+  <div class="form-group">
+    <input type="submit" class="button" value="Continue">
+  </div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{/layout}}

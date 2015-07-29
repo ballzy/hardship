@@ -1,0 +1,45 @@
+{{<layout}}
+
+{{$pageTitle}}Hardship Payment{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+  {{>includes/alpha-banner}}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+  
+      <form action="local-authority" method="#" class="form">
+
+      <a href="pregnant" class="example-back-link">Back</a>
+
+      <h1 class="form-title heading-large">
+        Children
+      </h1>
+
+      <fieldset class="inline form-group">
+        <legend class="form-label-bold add-padding" for="children">Are you receiving Child Benefit or Child Tax Credit for anyone?</legend>
+
+        <label class="block-label" for="children-1">
+          <input id="children-1" type="radio" name="children" value="Yes">
+          Yes
+        </label>
+        <label class="block-label" for="children-2">
+          <input id="children-2" type="radio" name="children" value="No">
+          No
+        </label>
+      </fieldset>
+
+      <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+      </div>
+
+    </div>
+    <div class="column-third">
+    </div>
+  </div>
+
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{/layout}}

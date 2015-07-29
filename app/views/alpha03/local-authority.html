@@ -1,0 +1,54 @@
+{{<layout}}
+
+{{$pageTitle}}Hardship Payment{{/pageTitle}}
+
+{{$content}}
+<main id="content" role="main">
+  {{>includes/alpha-banner}}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+  
+      <form action="carer" method="#" class="form">
+
+      <a href="children" class="example-back-link">Back</a>
+
+      <h1 class="form-title heading-large">
+        Local Authority Care
+      </h1>
+
+      <fieldset class="inline form-group">
+        <legend class="form-label-bold add-padding" for="care"><span>Have you been in Local Authority care in the last 3 years, or received advice and assistance from someone in Local Authority?</span></legend>
+        <label class="block-label" data-target="carer-details" for="care-1">
+          <input id="care-1" type="radio" name="care" value="Yes">
+          Yes
+        </label>
+        <label class="block-label" for="care-2">
+          <input id="care-2" type="radio" name="care" value="No">
+          No
+        </label>
+      </fieldset>
+
+      <div class="js-hidden panel-indent form-group" id="carer-details">
+        <div class="form-group">
+          <label class="form-label" for="care-name">
+          Name of Local Authority giving you support
+          </label>
+          <input type="text" class="form-control" name="care-name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+      </div>
+
+    </div>
+    <div class="column-third">
+      &nbsp;
+    </div>
+  </div>
+
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{/layout}}
